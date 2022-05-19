@@ -3,7 +3,7 @@ import CoinsTable from "./Components/CoinsTable";
 
 function App() {
   return (
-    <div className="relative w-screen min-h-[150vh] bg-black opacity-90 md:min-h-screen">
+    <div className="relative w-screen min-h-[170vh] md:min-h-[140vh] lg:min-h-[125vh] xl:min-h-[125vh] bg-black opacity-90 2xl:min-h-screen">
       {/* image fill whole */}
       <img
         src="background.png"
