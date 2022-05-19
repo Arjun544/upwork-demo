@@ -5,7 +5,6 @@ import {
   useGlobalFilter,
   useAsyncDebounce,
   useSortBy,
-  usePagination,
 } from "react-table";
 import { FaSort, FaSortUp, FaSortDown } from "react-icons/fa";
 import { RiSearchLine } from "react-icons/ri";
@@ -46,7 +45,7 @@ function GlobalFilter({
 }
 
 function CustomTable({ columns, data }) {
-  // Use the state and functions returned from useTable to build your UI
+  // Use the state and functions returned from useTable to build UI
   const {
     getTableProps,
     getTableBodyProps,
@@ -64,7 +63,7 @@ function CustomTable({ columns, data }) {
       autoResetFilters: false,
     },
 
-    useFilters, // useFilters!
+    useFilters,
     useGlobalFilter,
     useSortBy
   );

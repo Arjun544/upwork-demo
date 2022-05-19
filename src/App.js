@@ -22,7 +22,7 @@ function App() {
         </div>
         <div className="flex flex-col items-center justify-between gap-4 md:gap-0 md:flex md:flex-row px-12">
           {/* Estimated Balance */}
-          <div className="flex flex-col bg-slate-500 bg-opacity-10 w-80 rounded-lg border-amber-400 border py-6 px-3 gap-6 ">
+          <div className="flex flex-col bg-slate-500 bg-opacity-10 w-72 rounded-lg border-amber-400 border py-6 px-3 gap-6 ">
             <p className="text-amber-400 font-semibold text-xl underline underline-offset-8 decoration-slate-50/10 ">
               Estimated Balance
             </p>
@@ -35,9 +35,9 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  items-center gap-4 md:gap-20 md:flex md:flex-row">
+          <div className="flex flex-col  items-center gap-4 md:gap-16 md:flex md:flex-row">
             {/* Spot Balance */}
-            <div className="flex flex-col w-80 bg-slate-500 bg-opacity-10 rounded-lg border-amber-400 border py-6 px-3 gap-6">
+            <div className="flex flex-col w-72 bg-slate-500 bg-opacity-10 rounded-lg border-amber-400 border py-6 px-3 gap-6">
               <p className="text-amber-400 text-xl font-semibold underline underline-offset-8 decoration-slate-50/10 ">
                 Spot Balance
               </p>
@@ -51,7 +51,7 @@ function App() {
               </div>
             </div>
             {/* Fiat Balance */}
-            <div className="flex flex-col w-80 bg-slate-500 bg-opacity-10 rounded-lg border-amber-400 border py-6 px-3 gap-6">
+            <div className="flex flex-col w-72 bg-slate-500 bg-opacity-10 rounded-lg border-amber-400 border py-6 px-3 gap-6">
               <div className="flex items-center">
                 <p className="text-amber-400 font-semibold text-xl underline underline-offset-8 decoration-slate-50/10 ">
                   Fiat Balance

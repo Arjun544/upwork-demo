@@ -5,6 +5,7 @@ import CustomTable from "./CustomTable";
 import TableActions from "./TableActions";
 
 const CoinsTable = () => {
+
   const data =
     coinsData !== undefined &&
     coinsData?.map((item) => ({
@@ -67,7 +68,7 @@ const CoinsTable = () => {
     },
   ];
   return (
-    <div className=" px-12">
+    <div className="px-12 mb-4">
       {data !== undefined && <CustomTable columns={columns} data={data} />}
     </div>
   );
