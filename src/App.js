@@ -3,15 +3,19 @@ import CoinsTable from "./Components/CoinsTable";
 
 function App() {
   return (
-    <div className="min-h-screen min-w-screen bg-black overflow-hidden">
-      {/* Add TopBar here */}
-      <div className="flex flex-col flex-grow bg-black ">
+    <div className="relative w-full h-full overflow-hidden bg-black bg-opacity-80">
+      <img
+        src="background.png"
+        alt="background"
+        className="absolute mx-auto h-full w-full object-cover"
+      ></img>
+      <div className=" flex flex-col flex-grow ">
         <img
           src="Logo_2.png"
           alt="Logo_2"
-          className="absolute mx-auto right-0 left-0 mt-20 h-52 z-50 object-cover fill-white"
+          className="absolute mx-auto right-0 left-0 mt-28 h-52 z-50 object-cover"
         />
-        <div className="flex flex-col bg-gray-600 gap-10 m-10 rounded-xl">
+        <div className="flex flex-col bg-[#323234] gap-10 m-10 rounded-xl">
           <div className="flex flex-col items-center justify-between px-12 pt-12 md:flex md:flex-row ">
             <div className="flex items-center gap-4 ">
               <p className="text-amber-400 underline cursor-pointer">Deposit</p>
@@ -72,13 +76,17 @@ function App() {
               </div>
             </div>
           </div>
-          {/* Table */}
           <div className="flex flex-col w-full divide-y divide-slate-50 divide-opacity-20">
             <div className="flex "></div>
             <CoinsTable />
           </div>
         </div>
       </div>
+      <img
+        src="background.png"
+        alt="background"
+        className="absolute mx-auto h-full w-full object-cover"
+      ></img>
     </div>
   );
 }

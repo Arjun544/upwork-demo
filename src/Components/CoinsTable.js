@@ -28,7 +28,7 @@ const CoinsTable = () => {
       Header: "Total",
       accessor: "total",
       Cell: (props) => (
-        <span className="text-white text-base tracking-wider font-normal cursor-pointer">
+        <span className="text-white text-sm tracking-wider font-normal cursor-pointer">
           {props.cell.value}
         </span>
       ),
@@ -37,7 +37,7 @@ const CoinsTable = () => {
       Header: "Available",
       accessor: "available",
       Cell: (props) => (
-        <span className="text-white text-base tracking-wider font-normal cursor-pointer">
+        <span className="text-white text-sm tracking-wider font-normal cursor-pointer">
           {props.cell.value}
         </span>
       ),
@@ -47,7 +47,7 @@ const CoinsTable = () => {
       Header: "In Order",
       accessor: "inOrder",
       Cell: (props) => (
-        <span className="text-white text-base tracking-wider font-normal cursor-pointer">
+        <span className="text-white text-sm tracking-wider font-normal cursor-pointer">
           {props.cell.value}
         </span>
       ),
@@ -56,7 +56,7 @@ const CoinsTable = () => {
       Header: "BTC Value",
       accessor: "BTCValue",
       Cell: (props) => (
-        <span className="text-white text-base tracking-wider font-normal cursor-pointer">
+        <span className="text-white text-sm tracking-wider font-normal cursor-pointer">
           {props.cell.value}
         </span>
       ),
@@ -67,7 +67,7 @@ const CoinsTable = () => {
     },
   ];
   return (
-    <div className="flex flex-grow px-12">
+    <div className="flex w-full h-full px-12">
       {data !== undefined && <CustomTable columns={columns} data={data} />}
     </div>
   );
