@@ -67,7 +67,7 @@ const CoinsTable = () => {
     },
   ];
   return (
-    <div className="flex w-full h-full px-12">
+    <div className=" px-12">
       {data !== undefined && <CustomTable columns={columns} data={data} />}
     </div>
   );

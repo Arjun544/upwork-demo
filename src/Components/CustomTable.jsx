@@ -119,7 +119,7 @@ function CustomTable({ columns, data }) {
                         // we can add them into the header props
                         <th
                           scope="col"
-                          className={`group px-6 py-3 text-left text-xs font-bold text-amber-400 tracking-wider border-b border-slate-50 border-opacity-20 ${
+                          className={`group px-6 py-3 text-left text-base font-bold text-amber-400 tracking-wider border-b border-slate-50 border-opacity-20 ${
                             i !== headerGroup.headers.length -1 && "border-r"
                           }`}
                           {...column.getHeaderProps(
@@ -160,7 +160,7 @@ function CustomTable({ columns, data }) {
                             <td
                               {...cell.getCellProps()}
                               className={`px-6 py-4 whitespace-nowrap font-semibold ${
-                                i % 2 === 0 ? "bg-gray-400" : "bg-transparent"
+                                i % 2 === 0 ? "bg-gray-600 bg-opacity-50" : "bg-transparent"
                               }`}
                               role="cell"
                             >
