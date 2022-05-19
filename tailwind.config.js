@@ -8,12 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
-      screens: {
-        laptop: { raw: "(max-height: 1234px)" },
-        // => @media (max-height: 1234px) { ... }
-      },
+      
       backgroundImage: {
-        "hero-pattern": "url('background.png')",
+        background: "url('background.png')",
       },
     },
   },

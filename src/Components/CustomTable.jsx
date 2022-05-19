@@ -160,7 +160,15 @@ function CustomTable({ columns, data }) {
                             <td
                               {...cell.getCellProps()}
                               className={`px-6 py-3 whitespace-nowrap font-semibold ${
-                                i % 2 === 0 ? "bg-gray-600 bg-opacity-50" : "bg-transparent"
+                                i % 2 === 0
+                                  ? "bg-gray-600 bg-opacity-50 "
+                                  : "bg-transparent"
+                              } ${
+                                cell.column.Header === "Coin" &&
+                                "rounded-tl-xl rounded-bl-xl"
+                              }  ${
+                                cell.column.Header === "Action" &&
+                                "rounded-tr-xl rounded-br-xl"
                               }`}
                               role="cell"
                             >
