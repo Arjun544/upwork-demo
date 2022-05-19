@@ -10,7 +10,7 @@ function App() {
         alt="Logo_2"
         className="absolute mx-auto right-0 left-0 mt-28 h-52 object-cover"
       />
-      <div className="absolute mx-auto right-10 left-10 flex flex-col  gap-10 my-10 rounded-xl border-2 border-gray-500">
+      <div className="absolute mx-auto right-10 left-10 flex flex-col bg-slate-300 bg-opacity-10 gap-10 my-10 rounded-xl border-2 border-slate-300 border-opacity-20">
         <div className="flex flex-col items-center justify-between px-12 pt-8 md:pt-12 md:flex md:flex-row ">
           <div className="flex items-center gap-4 ">
             <p className="text-amber-400 underline cursor-pointer">Deposit</p>
